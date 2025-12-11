@@ -26,9 +26,9 @@ const StartProject = () => {
 
     return emailjs.send(
     //   "YOUR_SERVICE_ID",
-    "service_opqhlyb",
+    process.env.EMAILSERVICEID,
     //   "YOUR_TEMPLATE_ID",
-    "template_gfeasab",
+    process.env.TEMPELATE1ID,
       {
         name: formData.name,
         email: formData.email,
@@ -42,7 +42,7 @@ const StartProject = () => {
         tech: formData.tech,
       },
     //   "YOUR_PUBLIC_KEY"
-    "eLqI6FkUwK1GNDZCs"
+    process.env.PUBLICKEY
     );
 
     
@@ -53,9 +53,9 @@ const StartProject = () => {
 
     return emailjs.send(
     //   "YOUR_SERVICE_ID",
-    "service_opqhlyb",
+    process.env.EMAILSERVICEID,
     //   "YOUR_TEMPLATE_ID",
-    "template_6f8ts1n",
+    process.env.TEMPELATE2ID,
       {
         name: formData.name,
         email: formData.email,
@@ -66,7 +66,7 @@ const StartProject = () => {
        
       },
     //   "YOUR_PUBLIC_KEY"
-    "eLqI6FkUwK1GNDZCs"
+    process.env.PUBLICKEY
     );
     
   };

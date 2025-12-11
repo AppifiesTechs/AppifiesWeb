@@ -29,7 +29,7 @@ const Contact = () => {
           <div className="grid md:grid-cols-2 gap-6 mb-12">
             {/* Email Card */}
             <a
-              href="mailto:hello@devforge.dev"
+              href="mailto:appifies.tech@gmail.com"
               className="group p-8 rounded-2xl bg-card border border-border hover:border-primary/50 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_0_40px_hsl(82_84%_55%_/_0.15)]"
             >
               <div className="w-14 h-14 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center mb-6 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-3">
