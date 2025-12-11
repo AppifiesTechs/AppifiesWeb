@@ -26,9 +26,13 @@ const StartProject = () => {
 
     return emailjs.send(
     //   "YOUR_SERVICE_ID",
-    process.env.EMAILSERVICEID,
+    // process.env.EMAILSERVICEID,
+    import.meta.env.VITE_EMAILSERVICEID,
     //   "YOUR_TEMPLATE_ID",
-    process.env.TEMPELATE1ID,
+    import.meta.env.VITE_TEMPELATE1ID,
+    
+    
+    // process.env.TEMPELATE1ID,
       {
         name: formData.name,
         email: formData.email,
@@ -42,20 +46,28 @@ const StartProject = () => {
         tech: formData.tech,
       },
     //   "YOUR_PUBLIC_KEY"
-    process.env.PUBLICKEY
+    import.meta.env.VITE_PUBLICKEY
+  
     );
+    
 
     
   };
+//   console.log("SERVICE:", import.meta.env.VITE_EMAILSERVICEID);
+// console.log("TEMPLATE 1:", import.meta.env.VITE_TEMPELATE1ID);
+// console.log("TEMPLATE 2:", import.meta.env.VITE_TEMPELATE2ID);
+// console.log("PUBLIC KEY:", import.meta.env.VITE_PUBLICKEY);
+
 
   const sendEmailtoUser = () => {
     // e.preventDefault();
 
     return emailjs.send(
     //   "YOUR_SERVICE_ID",
-    process.env.EMAILSERVICEID,
+    import.meta.env.VITE_EMAILSERVICEID,
     //   "YOUR_TEMPLATE_ID",
-    process.env.TEMPELATE2ID,
+    import.meta.env.VITE_TEMPELATE2ID,
+    
       {
         name: formData.name,
         email: formData.email,
@@ -66,7 +78,8 @@ const StartProject = () => {
        
       },
     //   "YOUR_PUBLIC_KEY"
-    process.env.PUBLICKEY
+    import.meta.env.VITE_PUBLICKEY
+  
     );
     
   };
