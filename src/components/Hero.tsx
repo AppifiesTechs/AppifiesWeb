@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -45,13 +46,16 @@ const Hero = () => {
 
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-up delay-300">
+            <Link to={"/start-project"}>
             <Button variant="hero" size="xl" className="group">
               Start Your Project
               <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
             </Button>
+            </Link>
             <Button variant="heroOutline" size="xl">
               View Our Work
             </Button>
+            {/* </Link> */}
           </div>
 
           {/* Stats */}
